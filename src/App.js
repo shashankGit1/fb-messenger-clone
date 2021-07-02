@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, FormControl, InputLabel, Input } from "@material-ui/core";
-
+import { Button, FormControl, InputLabel, Input, Card, CardActions, CardContent, Typography } from "@material-ui/core";
 import "./App.css";
 import Message from "./Components/Message";
 
@@ -9,8 +8,8 @@ function App() {
   const [messages, setMessages] = useState([{username:'ashu', text:'hey guys'}, {username:'Aashu', text:'hey there'}]); //to keep track of all the messages
   const [username, setUsername] = useState(''); //Username
 
-  //useState = variable in REACT
-  //useEffect = run code on a condition in REACT 
+  // useState = variable in REACT
+  // useEffect = run code on a condition in REACT 
 
   useEffect(() => {
     //if the [input] is blank, this code runs once when the app component loads 
@@ -51,10 +50,9 @@ function App() {
         </form>
         {/* Messages Themselves: Loops through the messages array and prints each message */}
         {messages.map((message) => (
-          <Message username = {message.username} 
-          text= {message.text}/>
+          <Message username = {username} 
+          message= {message}/>
         ))}
-      
     </div>
   );
 }
