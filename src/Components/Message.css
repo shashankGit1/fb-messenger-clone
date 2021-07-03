@@ -4,7 +4,8 @@
     width: fit-content;
 }
 .message__user{
-    padding: 10px;
-    margin-left: 10px;
-    width: fit-content;
+    background-color: blue !important;
+}
+.message__guest{
+    background-color: gray !important;
 }
