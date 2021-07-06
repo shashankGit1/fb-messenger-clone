@@ -36,6 +36,10 @@
     transform: rotate(360deg);
   }
 }
-.p{
-  
+
+
+.Guest{
+  display: inline-flex !important;
 }
+.User{
+  display: inline-flex !important;
