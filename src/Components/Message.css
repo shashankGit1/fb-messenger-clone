@@ -2,10 +2,23 @@
     padding: 10px;
     margin: 10px;
     width: fit-content;
+    min-width: 250px;
+    color: whitesmoke;
 }
+
 .message__user{
-    background-color: blue !important;
+    margin-left: auto;
 }
+.message__userCard{
+    background-color: rgb(146, 233, 236) !important;
+    text-align: left !important;
+}
+
 .message__guest{
-    background-color: gray !important;
+    margin-left: auto;
 }
+.message__guestCard{
+    background-color: rgb(69, 235, 179) !important;
+    text-align: left !important;
+}
+
